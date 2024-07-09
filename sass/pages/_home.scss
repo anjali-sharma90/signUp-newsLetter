@@ -1,0 +1,183 @@
+body {
+  // background-color: red;
+}
+
+.news-letter__container {
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    background-color: $color-Slate;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+}
+
+.news-letter {
+  // background-color: green;
+  margin: 0 auto;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__img {
+    // background-color: azure;
+
+    @media (min-width: 1440px) {
+      // height: 593px;
+      // width: 400px;
+    }
+  }
+
+  &__text {
+    // background-color: cyan;
+    margin: 0 auto;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (min-width: 1440px) {
+      width: 376px;
+      height: 446px;
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__point {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    color: $color-Slate;
+  }
+
+  &__tick {
+    align-self: flex-start;
+  }
+
+  &__heading {
+    color: $color-Slate;
+  }
+
+  &__paragraph {
+    color: $color-Slate;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__check-email {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__invalid {
+    color: $color-primary;
+  }
+
+  &__email {
+    color: $color-Slate;
+  }
+
+  &__button-subscribe,
+  &__button-dismiss {
+    background-color: $color-Slate;
+    color: $color-white;
+    border-radius: 8px;
+    padding: 14px 46px;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-primary;
+      cursor: pointer;
+      box-shadow: 0 16px 32px $color-primary;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 888px;
+    height: 641px;
+    background-color: $color-white;
+    border-radius: 36px;
+    padding: 24px;
+    flex-direction: row-reverse;
+    gap: 64px;
+    align-items: center;
+  }
+}
+
+input {
+  width: 100%;
+  padding: 16px 24px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+  border-color: $color-Slate;
+  outline: $color-Slate;
+}
+
+.input::placeholder {
+  width: 154px;
+  height: 24px;
+  color: $color-Slate;
+  opacity: 50%;
+}
+
+.news-letter__success {
+  width: 327px;
+  margin: 0 auto;
+  display: flex; // change to flex
+  flex-direction: column;
+  gap: 263px;
+
+  @media (min-width: 1440px) {
+    background-color: $color-white;
+    width: 504px;
+
+    gap: 35px;
+    padding: 48px 64px;
+    border-radius: 36px;
+  }
+}
+
+.news-letter__subscribe {
+  margin-top: 149px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &-tick img {
+    height: 64px;
+    width: 64px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}

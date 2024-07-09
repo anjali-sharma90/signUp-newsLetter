@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="news-letter__container">
+      <div class="news-letter">
+        <div class="news-letter__img">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="assets/images/illustration-sign-up-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/images/illustration-sign-up-desktop.svg"
+            />
+
+            <img
+              src="assets/images/illustration-sign-up-mobile.svg"
+              alt="Description of the image"
+            />
+          </picture>
+        </div>
+        <div class="news-letter__text">
+          <div class="news-letter__features">
+            <h1 class="news-letter__heading h1">Stay updated!</h1>
+            <p class="news-letter__paragraph p">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+
+            <div class="news-letter__points">
+              <div class="news-letter__point p">
+                <img
+                  src="assets/images/icon-list.svg"
+                  alt=""
+                  class="news-letter__tick"
+                />
+                <p>Product discovery and building what matters</p>
+              </div>
+              <div class="news-letter__point p">
+                <img
+                  src="assets/images/icon-list.svg"
+                  alt=""
+                  class="news-letter__tick"
+                />
+                <p>Measuring to ensure updates are a success</p>
+              </div>
+              <div class="news-letter__point p">
+                <img
+                  src="assets/images/icon-list.svg"
+                  alt=""
+                  class="news-letter__tick"
+                />
+                <p>And much more!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-letter__form">
+            <div>
+              <div class="news-letter__check-email">
+                <h3 class="news-letter__email p1">Email address</h3>
+
+                <h3 class="news-letter__invalid hidden p1">
+                  Valid email required
+                </h3>
+              </div>
+              <form id="emailForm">
+                <input
+                  class="news-letter__text-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@company.com"
+                />
+              </form>
+            </div>
+
+            <div class="news-letter__button-subscribe p">
+              Subscribe to monthly newsletter
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-letter__success hidden">
+        <div class="news-letter__subscribe">
+          <div class="news-letter__subscribe-tick">
+            <img src="assets/images/icon-list.svg" alt="" />
+          </div>
+          <h1 class="news-letter__heading h1">Thanks for subscribing!</h1>
+          <p class="news-letter__paragraph p">
+            A confirmation email has been sent to
+            <span class="emailid p1"></span>
+            . Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+        <div class="news-letter__button-dismiss p">Dismiss Message</div>
+      </div>
+    </div>
+
+    <!-- Sign-up form start -->
+
+    <!--   -->
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Dismiss message -->
+
+    <!-- Success message end -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
